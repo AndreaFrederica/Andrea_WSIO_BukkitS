@@ -1,0 +1,17 @@
+name: Neouniban
+version: '${version}'
+main: cc.ghserver.andrea.neouniban.Neouniban
+api-version: 1.15
+authors: [ AndreaFrederica ]
+description: Neouniban for bukkit
+
+commands:
+  test:
+    #描述这个命令
+    description: My first command.
+    #用法
+    usage: /test
+    #执行此命令的人所需的权限
+    permission: test.basic
+    #没有权限的提示消息
+    permission-message: 你不能执行它.
