@@ -2,8 +2,10 @@ package cc.ghserver.andrea.neouniban.event.websocket;
 
 
 import cc.ghserver.andrea.neouniban.Context;
+import cc.ghserver.andrea.register.annotation.WSJsonRouteRegister;
 import cc.ghserver.andrea.tools.ProjectTools;
 import cc.ghserver.andrea.tools.CommonTools;
+import cn.hutool.json.JSONObject;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -38,6 +40,18 @@ public class KickPlayer {
             }
         }
     }
+    @WSJsonRouteRegister(route = "evevt_kickPlayer")
+    static public void jsonUUIDstrKickPlayer(JSONObject json_obj){
+        Player player = ProjectTools.getPlayerByUuid((String) json_obj.get("uuid"));
+        if(player != null){
+            ProjectTools.broadcast("Find player player_name -> " + player.getName() + " player_uuid-> " + player.getUniqueId());
+            if (player.isOnline()) {
+                // 踢掉玩家，并显示消息
+                realKickPlayer(player, (String) json_obj.get("message"));
+            }
+        }
+    }
+
     static public void wsKickPlayer(List<String> command_list){
         try {
             kickPlayer(command_list.get(1),command_list.get(2), command_list.get(3));

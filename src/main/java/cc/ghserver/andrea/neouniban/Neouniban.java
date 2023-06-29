@@ -1,6 +1,7 @@
 package cc.ghserver.andrea.neouniban;
 
 import cc.ghserver.andrea.neouniban.event.bukkit.OnLogin;
+import cc.ghserver.andrea.register.Register;
 import cc.ghserver.andrea.tools.ProjectTools;
 import cc.ghserver.andrea.webscoket.WebSocketIO;
 import org.bukkit.Bukkit;
@@ -15,6 +16,8 @@ public class Neouniban extends JavaPlugin {
         Context.context = this;
         // Commands
         Bukkit.getPluginCommand("test").setExecutor(new CommandHandler());
+        // Register
+        Register register = new Register();
         // Listeners
         Bukkit.getPluginManager().registerEvents(new OnLogin(), this);
         // WebSocketsServer
