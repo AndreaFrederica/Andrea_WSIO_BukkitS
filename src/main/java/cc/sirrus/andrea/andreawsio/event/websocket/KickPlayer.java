@@ -1,10 +1,10 @@
-package cc.ghserver.andrea.neouniban.event.websocket;
+package cc.sirrus.andrea.andreawsio.event.websocket;
 
 
-import cc.ghserver.andrea.neouniban.Context;
-import cc.ghserver.andrea.register.annotation.WSJsonRouteRegister;
-import cc.ghserver.andrea.tools.ProjectTools;
-import cc.ghserver.andrea.tools.CommonTools;
+import cc.sirrus.andrea.andreawsio.Context;
+import cc.sirrus.andrea.register.annotation.WSJsonRouteRegister;
+import cc.sirrus.andrea.tools.ProjectTools;
+import cc.sirrus.andrea.tools.CommonTools;
 import cn.hutool.json.JSONObject;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;

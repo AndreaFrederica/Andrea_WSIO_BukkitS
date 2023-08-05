@@ -1,6 +1,6 @@
-package cc.ghserver.andrea.tools;
+package cc.sirrus.andrea.tools;
 
-import cc.ghserver.andrea.neouniban.Neouniban;
+import cc.sirrus.andrea.andreawsio.AndreaWSIO;
 import cn.hutool.core.lang.Dict;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
@@ -20,7 +20,7 @@ public class ProjectTools {
     }
 
     static public void wsBroadcast(String message) {
-        Neouniban.WS_ServerIO.WebSocketServer.broadcast(message);
+        AndreaWSIO.WS_ServerIO.WebSocketServer.broadcast(message);
     }
 
     static public void broadcast(String message){

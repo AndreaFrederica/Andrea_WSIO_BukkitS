@@ -1,4 +1,4 @@
-package cc.ghserver.andrea.tools;
+package cc.sirrus.andrea.tools;
 
 
 public class JsonStringBuilder {
@@ -21,15 +21,15 @@ public class JsonStringBuilder {
         }
     }
 
-    public void append(String name, Object value, boolean... RAW_STRING) {
+    public void append(String key, Object value, boolean... RAW_STRING) {
         boolean DO_RAW_STRING = RAW_STRING.length == 1;
         if (this.type.equals("dict")) {
             // dict 类型
             if (this.head) {
-                this.stringBuilder.append("\"").append(name).append("\":");
+                this.stringBuilder.append("\"").append(key).append("\":");
                 this.head = false;
             } else {
-                this.stringBuilder.append(",\"").append(name).append("\":");
+                this.stringBuilder.append(",\"").append(key).append("\":");
             }
             addValItem(value, DO_RAW_STRING);
         } else {
@@ -77,7 +77,7 @@ public class JsonStringBuilder {
             case "java.util.UUID":
                 this.stringBuilder.append("\"").append(value.toString()).append("\"");
                 break;
-            case "cc.ghserver.andrea.tools.JsonStringBuilder":
+            case "tools.cc.sirrus.andrea.JsonStringBuilder":
                 this.stringBuilder.append(value.toString());
                 break;
             case  "java.net.InetSocketAddress":

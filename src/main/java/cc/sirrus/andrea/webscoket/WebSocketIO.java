@@ -1,6 +1,6 @@
-package cc.ghserver.andrea.webscoket;
+package cc.sirrus.andrea.webscoket;
 
-import cc.ghserver.andrea.tools.ProjectTools;
+import cc.sirrus.andrea.tools.ProjectTools;
 
 import java.net.UnknownHostException;
 

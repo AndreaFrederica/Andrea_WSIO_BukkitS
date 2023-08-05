@@ -1,4 +1,4 @@
-package cc.ghserver.andrea.register.annotation;
+package cc.sirrus.andrea.register.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

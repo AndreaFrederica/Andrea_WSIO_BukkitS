@@ -1,7 +1,7 @@
-package cc.ghserver.andrea.webscoket;
+package cc.sirrus.andrea.webscoket;
 
-import cc.ghserver.andrea.tools.ProjectTools;
-import cc.ghserver.andrea.neouniban.event.websocket.EventRoute;
+import cc.sirrus.andrea.tools.ProjectTools;
+import cc.sirrus.andrea.andreawsio.event.websocket.EventRoute;
 import org.java_websocket.WebSocket;
 import org.java_websocket.handshake.ClientHandshake;
 import org.java_websocket.server.WebSocketServer;
@@ -38,7 +38,8 @@ public class SocketServer extends WebSocketServer {
     public void onMessage(WebSocket conn, String message) {
 
         //broadcast(message);
-        ProjectTools.broadcast(conn + ": " + message);
+        ProjectTools.say(conn + ": " + message);
+        //ProjectTools.broadcast(conn + ": " + message);
         EventRoute.eventRoute(message);
     }
 

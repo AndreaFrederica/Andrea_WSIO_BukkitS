@@ -1,12 +1,11 @@
-package cc.ghserver.andrea.neouniban.event.websocket;
+package cc.sirrus.andrea.andreawsio.event.websocket;
 
-import cc.ghserver.andrea.neouniban.Context;
-import cc.ghserver.andrea.tools.CommonTools;
-import cc.ghserver.andrea.tools.ProjectTools;
+import cc.sirrus.andrea.andreawsio.Context;
+import cc.sirrus.andrea.tools.CommonTools;
+import cc.sirrus.andrea.tools.ProjectTools;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.List;
 

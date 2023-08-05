@@ -1,9 +1,9 @@
-name: Neouniban
+name: AndreaWSIO
 version: '${version}'
-main: cc.ghserver.andrea.neouniban.Neouniban
+main: cc.sirrus.andrea.andreawsio.AndreaWSIO
 api-version: 1.15
 authors: [ AndreaFrederica ]
-description: Neouniban for bukkit
+description: AndreaWebSocketIO for bukkit
 
 commands:
   test:

@@ -1,7 +1,7 @@
-package cc.ghserver.andrea.neouniban.event.websocket;
+package cc.sirrus.andrea.andreawsio.event.websocket;
 
-import cc.ghserver.andrea.tools.JsonStringBuilder;
-import cc.ghserver.andrea.tools.ProjectTools;
+import cc.sirrus.andrea.tools.JsonStringBuilder;
+import cc.sirrus.andrea.tools.ProjectTools;
 
 public class GetPlayerList {
     static public void getPlayerList(){

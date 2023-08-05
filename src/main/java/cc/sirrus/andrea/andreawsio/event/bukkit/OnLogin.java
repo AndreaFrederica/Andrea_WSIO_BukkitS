@@ -1,8 +1,9 @@
-package cc.ghserver.andrea.neouniban.event.bukkit;
+package cc.sirrus.andrea.andreawsio.event.bukkit;
 
 
-import cc.ghserver.andrea.tools.JsonStringBuilder;
-import cc.ghserver.andrea.tools.ProjectTools;
+import cc.sirrus.andrea.andreawsio.Context;
+import cc.sirrus.andrea.tools.JsonStringBuilder;
+import cc.sirrus.andrea.tools.ProjectTools;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -28,6 +29,7 @@ public class OnLogin implements Listener {
          */
         JsonStringBuilder message_builder =new JsonStringBuilder("dict");
         message_builder.append("type", "event_login");
+        message_builder.append("namespace", Context.namespace);
         message_builder.append("uuid", player.getUniqueId());
         message_builder.append("name",player.getName());
         message_builder.append("ip", player.getAddress());

@@ -1,4 +1,4 @@
-package cc.ghserver.andrea.neouniban;
+package cc.sirrus.andrea.andreawsio;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -16,7 +16,7 @@ public class CommandHandler implements CommandExecutor {
                 return false;
             } else { // 如果发送者不是玩家
                 //sender.sendMessage("This command can only be used by players."); // 向发送者发送一条消息
-                Neouniban.WS_ServerIO.WebSocketServer.broadcast("test");
+                AndreaWSIO.WS_ServerIO.WebSocketServer.broadcast("test");
                 return true;
             }
             //return true; // 返回true表示指令处理成功
