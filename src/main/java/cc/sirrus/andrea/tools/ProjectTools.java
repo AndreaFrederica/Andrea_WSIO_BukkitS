@@ -5,14 +5,31 @@ import cn.hutool.core.lang.Dict;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.smartboot.http.common.utils.Constant;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Objects;
 import java.util.UUID;
 
 import static org.bukkit.Bukkit.getServer;
 
 public class ProjectTools {
+    static public void displayLogo(){
+        final char tag = '※';
+        String raw_text = ProjectResource.logo_raw_text;
+        raw_text += tag;
+        char[] text_arr = raw_text.toCharArray();
+        StringBuilder line = new StringBuilder();
+        for (char i : text_arr){
+            if(Objects.equals(i, tag)){
+                say(line.toString());
+                line = new StringBuilder();
+            }else{
+                line.append(i);
+            }
+        }
+    }
 
     static public void say(String message) {
         CommandSender sender = Bukkit.getConsoleSender();
