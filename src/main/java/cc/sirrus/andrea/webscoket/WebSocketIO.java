@@ -16,7 +16,7 @@ public class WebSocketIO {
 
     public void start(){
         this.WebSocketServer.start();
-        ProjectTools.say("ChatServer started on port: " + WebSocketServer.getPort());
+        ProjectTools.say("WSIO_Server started on port: " + WebSocketServer.getPort());
     }
     public void stop(){
         try {

@@ -13,6 +13,8 @@ public class AndreaWSIO extends JavaPlugin {
     int ws_port = 23080;
     @Override
     public void onEnable() {
+        // DisPlayProjectLogo
+        ProjectTools.displayLogo();
         // GetConfig
         saveDefaultConfig();
         ws_port = getConfig().getInt("wsport");
