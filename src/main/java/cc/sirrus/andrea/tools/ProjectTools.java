@@ -29,6 +29,9 @@ public class ProjectTools {
                 line.append(i);
             }
         }
+        say("AndreaWSIO_BukkitVersion");
+        say("AndreaFrederica 20230930");
+        say("\n\n");
     }
 
     static public void say(String message) {
