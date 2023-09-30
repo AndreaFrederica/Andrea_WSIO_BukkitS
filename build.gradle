@@ -4,7 +4,7 @@ plugins {
 
 group = 'cc.sirrus.andrea'
 
-def plug_version = "Alpha_0.3"
+def plug_version = "Alpha_0.4"
 version = plug_version
 
 repositories {
