@@ -27,6 +27,7 @@ public class AndreaWSIO extends JavaPlugin {
         Register register = new Register();
         // Listeners
         Bukkit.getPluginManager().registerEvents(new OnLogin(), this);
+        OnLogin.AdvanceLoginCheck = getConfig().getBoolean("advance_login");
         Bukkit.getPluginManager().registerEvents(new OnChat(), this);
         // WebSocketsServer
         WS_ServerIO = new WebSocketIO(ws_port);

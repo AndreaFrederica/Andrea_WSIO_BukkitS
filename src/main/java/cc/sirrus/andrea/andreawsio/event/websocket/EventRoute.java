@@ -22,6 +22,8 @@ public class EventRoute {
                 route_method.invoke(null,jsonObject);
             } catch (Exception e){
                 ProjectTools.say("ERROR IN JSON ROUTE");
+                ProjectTools.say(e.getMessage());
+                e.printStackTrace();
             }
 
         }else{

@@ -118,10 +118,9 @@ public class ProjectTools {
     static public JsonStringBuilder getPlayersInfoJsonListBuilder(){
         JsonStringBuilder output = new JsonStringBuilder("list");
         Collection<Player> players = getOnlinePlayers();
-        JsonStringBuilder player_info;
         if (players != null) {
             for (Player player : players){
-                player_info = new JsonStringBuilder("dict");
+                JsonStringBuilder player_info = new JsonStringBuilder("dict");
                 player_info.append("name",player.getName());
                 player_info.append("uuid",player.getUniqueId());
                 player_info.append("ip", player.getAddress());

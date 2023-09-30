@@ -1,2 +1,6 @@
+# 暴露的链接端口
 wsport: 23080
+# 服务器的名称空间
 namespace: "default"
+# 是否启用高级登录API
+advance_login: false

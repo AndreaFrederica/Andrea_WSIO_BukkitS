@@ -77,7 +77,7 @@ public class JsonStringBuilder {
             case "java.util.UUID":
                 this.stringBuilder.append("\"").append(value.toString()).append("\"");
                 break;
-            case "tools.cc.sirrus.andrea.JsonStringBuilder":
+            case "cc.sirrus.andrea.tools.JsonStringBuilder":
                 this.stringBuilder.append(value.toString());
                 break;
             case  "java.net.InetSocketAddress":
